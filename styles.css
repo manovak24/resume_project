@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+}
+
+ul {
+   
+    list-style-type: none;
+}
+
+ul > li {
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+
+span {
+    text-decoration: underline;
+    font-weight: 500;
+    color: white !important;
+}
+
+.card-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.hero-ctr {
+    text-align: center;   
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.hero-ctr > img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.hero-ctr > h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section {
+    padding: 30px 20px;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.section:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.section-title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.section-body {
+    padding-top: 20px;
+}
+
+.section-body > p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.fa-check-circle {
+    padding-right: 5px;
+}
+
+.about {
+    background-color: #4299FF;
+}
+
+.recent-work {
+    background-color: #3288ED;
+    margin-bottom: -12px;
+}
+
+.contact {
+    background-color: #287DE3;
+}
