@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,12 +16,6 @@ ul {
 ul > li {
     font-size: 14px;
     padding-bottom: 12px;
-}
-
-span {
-    text-decoration: underline;
-    font-weight: 500;
-    color: white !important;
 }
 
 .card-container {
@@ -74,6 +69,11 @@ span {
     line-height: 22px;
 }
 
+.section-link {
+    font-weight: 500;
+    color: white !important;
+}
+
 .fa-check-circle {
     padding-right: 5px;
 }
@@ -89,4 +89,24 @@ span {
 
 .contact {
     background-color: #287DE3;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.fab, .fas, .far {
+    font-size: 12px;
+    padding-right: 4px;
 }
