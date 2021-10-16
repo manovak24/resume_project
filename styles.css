@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     background-color: #C7E3F2;
+    font-family: 'Inter', sans-serif;
 }
 
 ul {
@@ -14,39 +15,45 @@ ul {
 }
 
 ul > li {
-    font-size: 14px;
+    font-size: .95rem;
     padding-bottom: 12px;
 }
 
 .card-container {
     width: 90%;
     max-width: 520px;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 
 .hero-ctr {
     text-align: center;   
     background-color: white;
-    height: 300px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .hero-ctr > img {
-    width: 100px;
+    width: 120px;
     border-radius: 100%;
 }
 
-.hero-ctr > h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.hero-ctr > h1 {
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.hero-ctr > p {
+    font-size: 1.25em;
+    color: rgba(0,0,0,0.522);
 }
 
 .section {
-    padding: 30px 20px;
-    color: rgba(255, 255, 255, 0.781);
+    padding: 40px 20px;
+    color: white;
+    font-weight: 200;
 }
 
 .section:last-of-type {
@@ -57,7 +64,7 @@ ul > li {
 .section-title {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color: white;
 }
 
@@ -66,12 +73,12 @@ ul > li {
 }
 
 .section-body > p {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: .95rem;
+    line-height: 25px;
 }
 
 .section-link {
-    font-weight: 500;
+    font-weight: 300;
     color: white !important;
 }
 
@@ -96,7 +103,7 @@ ul > li {
     width: 80%;;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -5px
+    margin-bottom: -5px;
 }
 
 .contact-links > a {
@@ -104,12 +111,13 @@ ul > li {
 }
 
 .contact-link {
-    color: white;
+    color: rgba(255, 255, 255);
+    font-weight: 300;
     text-decoration: none;
-    font-size: 15px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
-    padding: 5px 15px;
+    padding: 10px 20px;
+    font-size: .95rem;
 }
 
 .fab, .fas, .far {
@@ -118,6 +126,10 @@ ul > li {
 }
 
 @media screen and (min-width: 736px) {
+    html, body {
+        font-size: .90rem;
+    }
+    
     .card-container {
         margin-top: 60px;
         margin-bottom: 60px;
@@ -125,12 +137,10 @@ ul > li {
 
     .section {
         display: flex;
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
 
     .section-body {
-        width: 50%;
+        width: 60%;
         padding-top: 0;
     }
 
@@ -141,5 +151,10 @@ ul > li {
         margin-right: 20px;
         padding-right: 20px;
         text-align: right;
+    }
+
+
+    .contact-link {
+        font-size: 12px;
     }
 }
