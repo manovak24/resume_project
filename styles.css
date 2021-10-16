@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: lightblue;
+    background-color: #C7E3F2;
 }
 
 ul {
@@ -20,13 +20,14 @@ ul > li {
 
 .card-container {
     width: 90%;
-    max-width: 400px;
+    max-width: 520px;
     margin: 30px auto;
 }
 
 .hero-ctr {
     text-align: center;   
     background-color: white;
+    height: 300px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     padding-top: 40px;
@@ -92,6 +93,7 @@ ul > li {
 }
 
 .contact-links {
+    width: 80%;;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -5px
@@ -104,13 +106,40 @@ ul > li {
 .contact-link {
     color: white;
     text-decoration: none;
-    font-size: 14px;
-    border: 1px solid white;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 15px;
 }
 
 .fab, .fas, .far {
     font-size: 12px;
     padding-right: 4px;
+}
+
+@media screen and (min-width: 736px) {
+    .card-container {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .section {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section-body {
+        width: 50%;
+        padding-top: 0;
+    }
+
+    .section-title {
+        width: 30%;
+        border-bottom: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        margin-right: 20px;
+        padding-right: 20px;
+        text-align: right;
+    }
 }
